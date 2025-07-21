@@ -1,0 +1,23 @@
+{
+    "name": "yibr/filament-impersonate-v4",
+    "description": "A Filament package to impersonate your users.",
+    "type": "library",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "require": {
+        "lab404/laravel-impersonate": "^1.7",
+        "filament/filament": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "STS\\FilamentImpersonate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "STS\\FilamentImpersonate\\FilamentImpersonateServiceProvider"
+            ]
+        }
+    }
+}
